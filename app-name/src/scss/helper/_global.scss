@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #16161a;
+}
+
+::selection {
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}

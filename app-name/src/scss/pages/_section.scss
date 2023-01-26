@@ -1,0 +1,52 @@
+.Section {
+    position: relative;
+    padding: max(1vw, 1em) max(1vw, 1em);
+    height: 46.5vh;
+    margin: max(10.5vw, 10.5em) max(1vw, 1em) 0;
+    border-radius: max(0.3vw, 0.3em);
+    z-index: 0;
+    box-shadow: rgb(193 193 197 / 25%) 0px 50px 110px -44px, rgb(0 0 0 / 30%) 0px 30px 60px -30px, rgb(10 37 64 / 35%) 0px -2px 6px 0px inset;
+    background-color: #242629;
+    backdrop-filter: blur(30px);
+    overflow: auto;
+    
+    &::-webkit-scrollbar {
+        width: .2rem;
+        height: .4rem;
+    }
+    
+    &::-webkit-scrollbar-track {
+        background: transparent;
+        cursor: pointer;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background: #ffffff57;
+        border-radius: 50%;
+        transition: .3s;
+        &:hover {
+            background: #ffffff2f;
+        }
+    }
+
+
+    @media (max-height: 731px) {
+        & {
+            padding: max(0vw, 0em) max(1vw, 1em);
+        }
+    }
+
+    @media (max-height: 732px) {
+        & {
+            padding: max(0vw, 0em) max(1vw, 1em);
+        }
+    }
+
+    .contenar {
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+}

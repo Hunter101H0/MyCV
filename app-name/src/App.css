@@ -1,0 +1,171 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.backg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+@keyframes move {
+  100% {
+      transform: translate3d(0, 0, 1px) rotate(160deg);
+  }
+}
+
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: #16161a;
+  overflow: hidden;
+}
+
+.background span {
+  width: 9vmin;
+  height: 9vmin;
+  border-radius: 9vmin;
+  backface-visibility: hidden;
+  position: absolute;
+  animation: move;
+  animation-duration: 9;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+
+.background span:nth-child(0) {
+  color: #242429;
+  top: 67%;
+  left: 41%;
+  animation-duration: 119s;
+  animation-delay: -314s;
+  transform-origin: 23vw 4vh;
+  box-shadow: -18vmin 0 2.448493283218338vmin currentColor;
+}
+.background span:nth-child(1) {
+  color: #242429;
+  top: 35%;
+  left: 63%;
+  animation-duration: 369s;
+  animation-delay: -22s;
+  transform-origin: 1vw 25vh;
+  box-shadow: -18vmin 0 3.155931187561343vmin currentColor;
+}
+.background span:nth-child(2) {
+  color: #0a0a0b;
+  top: 62%;
+  left: 86%;
+  animation-duration: 79s;
+  animation-delay: -20s;
+  transform-origin: -9vw -12vh;
+  box-shadow: -18vmin 0 2.8699461141434863vmin currentColor;
+}
+.background span:nth-child(3) {
+  color: #0f0a0a;
+  top: 97%;
+  left: 51%;
+  animation-duration: 47s;
+  animation-delay: -51s;
+  transform-origin: 12vw 24vh;
+  box-shadow: -18vmin 0 2.6352268641516847vmin currentColor;
+}
+.background span:nth-child(4) {
+  color: #0a0a0b;
+  top: 96%;
+  left: 35%;
+  animation-duration: 87s;
+  animation-delay: -130s;
+  transform-origin: -22vw 25vh;
+  box-shadow: 18vmin 0 2.3733597898148986vmin currentColor;
+}
+.background span:nth-child(5) {
+  color: #0a0a0b;
+  top: 52%;
+  left: 24%;
+  animation-duration: 299s;
+  animation-delay: -178s;
+  transform-origin: 21vw 10vh;
+  box-shadow: -18vmin 0 2.7779562176310773vmin currentColor;
+}
+.background span:nth-child(6) {
+  color: #242429;
+  top: 46%;
+  left: 90%;
+  animation-duration: 391s;
+  animation-delay: -209s;
+  transform-origin: 3vw -21vh;
+  box-shadow: 18vmin 0 2.473739104477602vmin currentColor;
+}
+.background span:nth-child(7) {
+  color: #0a0a0b;
+  top: 11%;
+  left: 15%;
+  animation-duration: 176s;
+  animation-delay: -373s;
+  transform-origin: 16vw 4vh;
+  box-shadow: 18vmin 0 3.109185886251891vmin currentColor;
+}
+.background span:nth-child(8) {
+  color: #0a0a0b;
+  top: 52%;
+  left: 37%;
+  animation-duration: 322s;
+  animation-delay: -404s;
+  transform-origin: -3vw 21vh;
+  box-shadow: -18vmin 0 2.465165227316512vmin currentColor;
+}
+.background span:nth-child(9) {
+  color: #0f0a0a;
+  top: 70%;
+  left: 93%;
+  animation-duration: 270s;
+  animation-delay: -59s;
+  transform-origin: 19vw 25vh;
+  box-shadow: -18vmin 0 2.262722627803562vmin currentColor;
+}
+
+
+
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

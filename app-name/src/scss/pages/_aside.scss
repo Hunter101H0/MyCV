@@ -1,0 +1,115 @@
+
+.asid {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    // display: none;
+
+    .asidContiner {
+        position: relative;
+        display: flex;
+        height: -webkit-fill-available;
+        
+        .selct_box {
+            position: relative;
+            text-align: center;
+            width: max(25vw, 25em);
+            z-index: 100;
+            background-color: #242629;
+            
+            .leftt {
+                left: 0;
+                position: relative;
+
+                img {
+                    width: max(6vw, 6em);
+                    height: max(6vw, 6em);
+                    object-fit: cover;
+                    border-radius: max(50vw, 50em);
+                    margin: max(2vw, 2em) max(0vw, 0em) max(1vw, 1em);
+                }
+
+                .name {
+                    position: relative;
+                    text-align: left;
+                    background-color: #16161ac7;
+                    padding: 0px 0px 0px max(1vw, 1em);
+                    
+                    
+                    h1 {
+                        font-size: max(4.5vw, 4.5em);
+                        width: max-content;
+                        user-select: none;
+                        color: white;
+                        margin: 0;
+                    }
+                    
+                    p {
+                        font-size: max(1.5vw, 1.5em);
+                        user-select: none;
+                        color: rgb(208, 208, 208);
+                        margin: 0;
+                    }
+                }
+
+                .Profile {
+
+                    h2 {
+                        text-align: left;
+                        padding: max(0.9vw, 0.9em) 0px 0px max(0.5vw, 0.5em);
+                        color: white;
+                        border-bottom: max(0.1vw, 0.1em) solid white; 
+                        font-size: max(1.9vw, 1.9em);
+                    }
+
+                    .age {
+                        margin: max(2vw,2em) 0 max(0.8vw,0.8em);
+
+                        h3 {
+                            text-align: left;
+                            padding: 0px 0px 0px max(0.5vw, 0.5em);
+                            font-size: max(2vw,2em);
+                            color: #fffffe;
+                            span {
+                                font-size: max(0.9vw,0.9em);
+                                color: #94a1b2;
+                            }
+                        }
+                    }
+                    .nationality {
+                        margin: max(2vw,2em) 0 max(1vw,1em);
+                        
+                        h3 {
+                            text-align: left;
+                            padding: 0px 0px 0px max(0.5vw, 0.5em);
+                            font-size: max(2vw,2em);
+                            color: #fffffe;
+                            span {
+                                font-size: max(0.7vw,0.7em);
+                                color: #94a1b2;
+                            }
+                        }
+                    }
+                    
+                    .e_mail {
+                        margin: max(2vw,2em) 0 max(1vw,1em);
+                        
+                        h3 {
+                            text-align: left;
+                            padding: 0px 0px 0px max(0.5vw, 0.5em);
+                            font-size: max(2vw,2em);
+                            color: #fffffe;
+                            
+                            span {
+                                font-size: max(0.6vw,0.6em);
+                                color: #94a1b2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+}

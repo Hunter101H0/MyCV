@@ -1,0 +1,38 @@
+
+
+.Social {
+
+    h1 {
+        color: white;
+        font-size: max(4vw, 4em);
+        text-align: left;
+        margin-bottom: max(0.5vw,0.5em);
+    }
+    .continerr {
+
+        .card {
+            background-color: transparent;
+            border: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: max(3vw, 3em);
+            .box {
+                position: relative;
+                i {
+                    position: absolute;
+                    color: white;
+                    right: -48px;
+                    top: -20px;
+                    padding: 0 30px 0 0;
+                    font-size: max(3vw, 3em);
+                }
+                video {
+                    width: 400px;
+                    background-color: black;
+                    border-radius: max(0.5vw, 0.5em);
+                }
+            }
+        }
+    }
+}

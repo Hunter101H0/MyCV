@@ -1,0 +1,144 @@
+.Header {
+    position: relative;
+    width: max(75vw, 75em);
+    justify-content: space-between;
+    align-items: center;
+
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: max(1vw,  1em);
+        flex-direction: row-reverse;
+        @media (max-width: 65em) {
+            & {
+                display: none;
+            }
+        }
+
+        .primary-navigation {
+            position: relative;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            background-color: #93939324;
+            border-radius: 7px;
+            backdrop-filter: blur(15px);
+            padding: max(1vw, 1em) max(1vw, 1em);
+            overflow: hidden;
+            gap: max(3vw, 3em);
+
+            &::after {
+                position: absolute;
+                content: "";
+                bottom: 0;
+                left: 50%;
+                width: 0%;
+                height: 3px;
+                border-radius: 50%;
+                background-color: rgb(255, 255, 255);
+                transform: translate(-50%, -50%);
+                transition: ease .3s;
+            }
+            &::before {
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 50%;
+                width: 0%;
+                height: 3px;
+                border-radius: 50%;
+                background-color: rgb(255, 255, 255);
+                transform: translate(-50%, -50%);
+                transition: ease .3s;
+            }
+            &:hover::after {
+                width: 100%;
+                
+            }
+            &:hover::before {
+                width: 100%;
+                
+            }
+
+            @media (max-width: 65em) {
+                & {
+                    position: fixed;
+                    inset: 0 0 0 30%;
+                    flex-direction: column;
+                    padding: min(20vh, 10rem) 2em;
+                    background: steelblue;
+                }
+            }
+
+            li {
+                
+
+                a {
+                    position: relative;
+                    text-decoration: none;
+                    color: white;
+                    font-size: max(1.5vw, 1.5em);
+                    display: grid;
+                    
+                    &.activ {
+                        position: relative;
+                        text-decoration: none;
+                        color: white;
+                        font-size: max(1.5vw, 1.5em);
+                        display: grid;
+                        
+                        &::before {
+                            position: absolute;
+                            content: "";
+                            bottom: 0;
+                            left: 50%;
+                            width: 100%;
+                            height: 3px;
+                            border-radius: 10%;
+                            background-color: #16161a;
+                            transform: translate(-50%, -50%);
+                            transition: ease-in-out .3s;
+                        }
+                        &::after {
+                            position: absolute;
+                            content: "";
+                            bottom: 0;
+                            left: 50%;
+                            width: 30%;
+                            height: 3px;
+                            border-radius: 50%;
+                            background-color: rgb(255, 255, 255);
+                            transform: translate(-50%, -50%);
+                            transition: ease .3s;
+                        }
+
+                        &:hover::before {
+                            transition-delay: 0.2s;
+                            width: 100%;
+                            
+                        }
+                        &:hover::after {
+                            transition-delay: 0.2s;
+                            width: 30%;
+                        }
+                    }
+                    
+                }
+            }
+        }
+
+        .lite {
+
+            i {
+                color: white;
+                font-size: max(2vw, 2em);
+                cursor: pointer;
+            }
+        }
+    }
+
+
+}
